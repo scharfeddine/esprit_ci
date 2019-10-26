@@ -28,6 +28,7 @@ pipeline {
                 script {
                     // Let's clone the source
                     git 'https://github.com/scharfeddine/esprit_ci.git';
+                    echo "clone done"
                 }
             }
         }
