@@ -37,7 +37,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                    sh "mvn package -DskipTests=true"
+                    sh "mvn package"
                 }
             }
         }
