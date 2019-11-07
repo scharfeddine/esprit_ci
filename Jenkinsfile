@@ -89,6 +89,14 @@ pipeline {
                 }
             }
         }
+        stage("Notification") {
+            steps {
+                script {
+                    // emailext
+					emailext attachLog: true, body: 'Hello', compressLog: true, subject: 'Test', to: 'sahli.charfeddine@gmail.com'
+                }
+            }
+        }		
         
     }
 }
