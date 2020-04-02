@@ -38,7 +38,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-		    sh label: '', script: 'cd esprit_ci/'
+		    sh label: '', script: 'ls'
 		    sh label: '', script: 'pwd'
                     sh label: '', script: 'mvn clean package'
                 }
